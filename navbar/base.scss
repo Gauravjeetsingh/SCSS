@@ -1,0 +1,49 @@
+@import 'reset';
+@import 'options';
+
+body{
+    font-family:$font-stack;
+}
+
+.main-nav {
+   width: 100%;
+   height: 50px;
+   background-color:$nav-bg-color;
+   ul{
+      list-style-type: none;
+      max-width:650px;
+      height:50px;
+      margin:auto;
+      li {
+	position: relative;
+	float: left;
+	padding: 5px 15px;
+	margin: 10px 15px;
+	cursor: pointer;
+	text-align:center;
+       }
+    } a{
+      text-decoration: none;
+      color:$nav-text-color;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+  .main-nav {
+    height: 220px;
+    ul {
+      padding:0 8px;
+      height: 250px; 
+      max-width: 100%;
+    }
+    
+    ul > li {
+      width:100%;
+      padding:7px 4px;
+      margin:0 0 8px 0;
+    
+    }
+  }
+}
